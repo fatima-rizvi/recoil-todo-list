@@ -2,8 +2,8 @@ import React from 'react';
 import {
 //   RecoilRoot,
   atom,
-  selector,
-  useRecoilState,
+  // selector,
+  // useRecoilState,
   useRecoilValue,
 } from 'recoil';
 
