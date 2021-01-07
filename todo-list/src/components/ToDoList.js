@@ -6,6 +6,7 @@ import {
   // useRecoilState,
   useRecoilValue,
 } from 'recoil';
+import TodoItemCreator from "./TodoItemCreator"
 
 // Atoms
 // They represent a piece of state
@@ -27,11 +28,11 @@ const todoListState = atom({
       <div>
         {/* <ToDoListStats /> */}
         {/* <ToDoListFilters /> */}
-        <TodoItemCreator />
+        <TodoItemCreator listState = {todoListState}/>
   
-        {todoList.map((todoItem) => (
+        {/* {todoList.map((todoItem) => (
           <TodoItem key = {todoItem.id} item = {todoItem} />
-        ))}
+        ))} */}
       </div>
     )
   }
