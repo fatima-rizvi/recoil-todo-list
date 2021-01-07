@@ -32,7 +32,7 @@ const todoListState = atom({
         <TodoItemCreator listState = {todoListState}/>
   
         {todoList.map((todoItem) => (
-          <TodoItem key = {todoItem.id} item = {todoItem} />
+          <TodoItem key = {todoItem.id} item = {todoItem} listState = {todoListState} />
         ))}
       </div>
     )
