@@ -51,17 +51,17 @@ function TodoItem({item, listState}) {
 
     return (
         <div>
-            <input
-                type = "text"
-                value = {item.text}
-                onChange = {editItemText}
-            />
             <input 
                 type = "checkbox"
                 checked = {item.isComplete}
                 onChange = {toggleItemCOmpletion}
             />
-            <button onClick = {deleteItem}>Complete!!</button>
+            <input
+                type = "text"
+                value = {item.text}
+                onChange = {editItemText}
+            />
+            <button onClick = {deleteItem}>EXTERMINATE!!!!</button>
         </div>
     )
 
