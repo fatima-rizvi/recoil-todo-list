@@ -6,7 +6,7 @@ import {
   // useRecoilState,
   // useRecoilValue,
 } from 'recoil';
-import ToDoList from './ToDoList';
+import ToDoList from './components/ToDoList';
 import './App.css';
 
 function App() {
